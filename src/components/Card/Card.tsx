@@ -6,9 +6,9 @@ import arrow from "/public/images/icon-arrow-down.svg";
 export default function Card() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const click = (index) => {
+  const click = (index: number) => {
     if (activeIndex === index) {
-      setActiveIndex(true);
+      setActiveIndex(null);
     } else {
       setActiveIndex(index);
     }
