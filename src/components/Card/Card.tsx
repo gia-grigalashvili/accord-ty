@@ -4,7 +4,7 @@ import women from "/public/images/illustration-woman-online-mobile.svg";
 import arrow from "/public/images/icon-arrow-down.svg";
 
 export default function Card() {
-  // const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const click = (index) => {
     if (activeIndex === index) {
